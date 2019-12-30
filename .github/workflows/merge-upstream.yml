@@ -12,8 +12,8 @@ on:
   push:
     branches: 
       - master
-  schedule:
-    - cron: 30 19 * * *
+#  schedule:
+#    - cron: 30 19 * * *
 
 jobs:
   merge:
@@ -31,8 +31,8 @@ jobs:
 
     - name: Set git identity
       run : |
-        git config --global user.email "KFER.Mercer@gmail.com"
-        git config --global user.name "KFERMercer"
+        git config --global user.email "b68668@163.com"
+        git config --global user.name "jason022"
 
     - name: Load upstream commits
       run: git pull https://github.com/coolsnowwolf/lede.git --no-edit --strategy-option ours
