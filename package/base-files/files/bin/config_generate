@@ -128,8 +128,8 @@ generate_network() {
 		pppoe)
 			uci -q batch <<-EOF
 				set network.$1.proto='pppoe'
-				set network.$1.username='02202794916'
-				set network.$1.password='123456'
+				set network.$1.username='username'
+				set network.$1.password='password'
 			EOF
 			[ -e /proc/sys/net/ipv6 ] && {
 				uci -q batch <<-EOF
